@@ -15,20 +15,24 @@ namespace Veterinaria.Logic.Models
         public int Id { get; set; }
         [Required, MaxLength(50)]
         public string Nombre { get; set; } = string.Empty;
+
         [Required]
         public int Edad { get; set; }
+
         [Required, Column(TypeName = "decimal(10,2)")]
         public double Peso { get; set; }
-        [Required, NotNull]
-        public string? NombreDueno { get; set; }
-        [Required, NotNull]
+
+        [Required, Display(Name = "DNI Dueño"),  NotNull]
         public string? DuenoDNI { get; set; }
-        [Required, NotNull]
+
+        [Required, Display(Name = "Nombre Especie"), NotNull]
         public int EspecieId { get; set; }
-        [Required, NotNull]
-        public DateTime Registrado { get; set; }
+         
         public Dueno? Dueno { get; set; }
         public Especie? Especie { get; set; }
+
+        [Required, Display(Name = "Fecha de Registro"), NotNull]
+        public DateTime Registrado { get; set; } = DateTime.Now;
 
     }
 }

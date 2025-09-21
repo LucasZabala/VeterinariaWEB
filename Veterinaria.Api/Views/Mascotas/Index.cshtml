@@ -22,16 +22,13 @@
                 @Html.DisplayNameFor(model => model.Peso)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NombreDueno)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Registrado)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Dueno)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Especie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registrado)
             </th>
             <th></th>
         </tr>
@@ -49,16 +46,13 @@
                 @Html.DisplayFor(modelItem => item.Peso)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NombreDueno)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Registrado)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Dueno.DNI)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Especie.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Registrado)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

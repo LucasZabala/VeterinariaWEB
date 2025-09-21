@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -48,7 +49,8 @@ namespace Veterinaria.Logic.Migrations
                     Edad = table.Column<int>(type: "int", nullable: false),
                     Peso = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
                     DuenoDNI = table.Column<string>(type: "nvarchar(50)", nullable: false),
-                    EspecieId = table.Column<int>(type: "int", nullable: false)
+                    EspecieId = table.Column<int>(type: "int", nullable: false),
+                    Registrado = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

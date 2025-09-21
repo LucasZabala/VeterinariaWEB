@@ -15,7 +15,7 @@ namespace Veterinaria.Logic.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required, MaxLength(50), Unicode, NotNull]
+        [Required, Display(Name = "Nombre de Especie"), MaxLength(50), Unicode, NotNull]
         public string? Nombre { get; set; }
         [JsonIgnore]
         public ICollection<Mascota>? Mascotas { get; set; }
