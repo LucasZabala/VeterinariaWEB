@@ -1,0 +1,15 @@
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\bin\Debug\net9.0\Veterinaria.Logic.deps.json
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\bin\Debug\net9.0\Veterinaria.Logic.runtimeconfig.json
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\bin\Debug\net9.0\Veterinaria.Logic.dll
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\bin\Debug\net9.0\Veterinaria.Logic.pdb
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.AssemblyInfo.cs
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.sourcelink.json
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.dll
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\refint\Veterinaria.Logic.dll
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.pdb
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\Veterinaria.Logic.genruntimeconfig.cache
+C:\Users\User\Documents\Facultad\ASP.NET\VeterinariaWEB\Veterinaria.Logic\obj\Debug\net9.0\ref\Veterinaria.Logic.dll
