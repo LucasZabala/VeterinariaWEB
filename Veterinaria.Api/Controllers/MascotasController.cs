@@ -59,7 +59,7 @@ namespace Veterinaria.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Peso,DuenoDNI,EspecieId")] Mascota mascota)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Peso,NombreDueno,DuenoDNI,EspecieId,Registrado")] Mascota mascota)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace Veterinaria.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Peso,DuenoDNI,EspecieId")] Mascota mascota)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Peso,NombreDueno,DuenoDNI,EspecieId,Registrado")] Mascota mascota)
         {
             if (id != mascota.Id)
             {

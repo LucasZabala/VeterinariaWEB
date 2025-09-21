@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,7 +15,7 @@ namespace Veterinaria.Logic.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required, MaxLength(50), NotNull]
+        [Required, MaxLength(50), Unicode, NotNull]
         public string? Nombre { get; set; }
         [JsonIgnore]
         public ICollection<Mascota>? Mascotas { get; set; }

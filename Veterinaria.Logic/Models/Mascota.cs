@@ -20,10 +20,13 @@ namespace Veterinaria.Logic.Models
         [Required, Column(TypeName = "decimal(10,2)")]
         public double Peso { get; set; }
         [Required, NotNull]
+        public string? NombreDueno { get; set; }
+        [Required, NotNull]
         public string? DuenoDNI { get; set; }
         [Required, NotNull]
         public int EspecieId { get; set; }
-
+        [Required, NotNull]
+        public DateTime Registrado { get; set; }
         public Dueno? Dueno { get; set; }
         public Especie? Especie { get; set; }
 
