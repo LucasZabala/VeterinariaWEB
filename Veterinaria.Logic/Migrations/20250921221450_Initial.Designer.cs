@@ -12,8 +12,8 @@ using Veterinaria.Logic.Data;
 namespace Veterinaria.Logic.Migrations
 {
     [DbContext(typeof(VeterinariaDbContext))]
-    [Migration("20250921173052_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250921221450_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,6 +94,10 @@ namespace Veterinaria.Logic.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("NombreApellidoDueno")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("Peso")
                         .HasColumnType("decimal(10,2)");

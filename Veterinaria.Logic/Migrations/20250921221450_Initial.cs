@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Veterinaria.Logic.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -49,6 +49,7 @@ namespace Veterinaria.Logic.Migrations
                     Edad = table.Column<int>(type: "int", nullable: false),
                     Peso = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
                     DuenoDNI = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    NombreApellidoDueno = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     EspecieId = table.Column<int>(type: "int", nullable: false),
                     Registrado = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

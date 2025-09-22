@@ -92,6 +92,10 @@ namespace Veterinaria.Logic.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("NombreApellidoDueno")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<decimal>("Peso")
                         .HasColumnType("decimal(10,2)");
 

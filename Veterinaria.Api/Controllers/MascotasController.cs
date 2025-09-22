@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Veterinaria.Logic.Data;
+using Veterinaria.Logic.Interfaces;
 using Veterinaria.Logic.Models;
 
 namespace Veterinaria.Web.Controllers
@@ -13,10 +14,12 @@ namespace Veterinaria.Web.Controllers
     public class MascotasController : Controller
     {
         private readonly VeterinariaDbContext _context;
+        private readonly IDuenoService _duenoService;
 
-        public MascotasController(VeterinariaDbContext context)
+        public MascotasController(VeterinariaDbContext context, IDuenoService duenoService)
         {
             _context = context;
+            _duenoService = duenoService;
         }
 
         // GET: Mascotas
@@ -59,8 +62,9 @@ namespace Veterinaria.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Peso,DuenoDNI,EspecieId")] Mascota mascota)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Peso,DuenoDNI,NombreApellidoDueno,EspecieId")] Mascota mascota)
         {
+            mascota.NombreApellidoDueno = await _duenoService.GetFirstLastNameDuenoByDNIAsync(mascota.DuenoDNI);
             if (ModelState.IsValid)
             {
                 _context.Add(mascota);
@@ -95,7 +99,7 @@ namespace Veterinaria.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Peso,DuenoDNI,EspecieId,Registrado")] Mascota mascota)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Peso,DuenoDNI,NombreApellidoDueno,EspecieId,Registrado")] Mascota mascota)
         {
             if (id != mascota.Id)
             {
@@ -106,6 +110,7 @@ namespace Veterinaria.Web.Controllers
             {
                 try
                 {
+                    mascota.NombreApellidoDueno = await _duenoService.GetFirstLastNameDuenoByDNIAsync(mascota.DuenoDNI);
                     _context.Update(mascota);
                     await _context.SaveChangesAsync();
                 }

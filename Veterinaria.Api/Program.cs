@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Veterinaria.Logic.Data;
+using Veterinaria.Logic.Interfaces;
+using Veterinaria.Logic.Repository;
+using Veterinaria.Logic.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +11,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<VeterinariaDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IDuenoRepository, DuenoRepository>();
+builder.Services.AddScoped<IDuenoService, DuenoService>();
 
 var app = builder.Build();
 

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Veterinaria.Logic.Data;
+using Veterinaria.Logic.Interfaces;
 using Veterinaria.Logic.Models;
 
 namespace Veterinaria.Web.Controllers
@@ -13,10 +14,12 @@ namespace Veterinaria.Web.Controllers
     public class DuenoesController : Controller
     {
         private readonly VeterinariaDbContext _context;
+        private readonly IDuenoService _duenoService;
 
-        public DuenoesController(VeterinariaDbContext context)
+        public DuenoesController(VeterinariaDbContext context, IDuenoService duenoService)
         {
             _context = context;
+            _duenoService = duenoService;
         }
 
         // GET: Duenoes
@@ -26,21 +29,17 @@ namespace Veterinaria.Web.Controllers
         }
 
         // GET: Duenoes/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(string dni)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
+                var dueno = await _duenoService.GetDuenoByDNIAsync(dni);
+                return View(dueno);
             }
-
-            var dueno = await _context.Duenos
-                .FirstOrDefaultAsync(m => m.DNI == id);
-            if (dueno == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                return BadRequest(ex.Message);
             }
-
-            return View(dueno);
         }
 
         // GET: Duenoes/Create
@@ -58,27 +57,32 @@ namespace Veterinaria.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(dueno);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    await _duenoService.AddDuenoAsync(dueno);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+
             }
             return View(dueno);
         }
 
         // GET: Duenoes/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(string dni)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
+                var dueno = await _duenoService.GetDuenoByDNIAsync(dni);
+                return View(dueno);
             }
-
-            var dueno = await _context.Duenos.FindAsync(id);
-            if (dueno == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                return BadRequest(ex.Message);
             }
-            return View(dueno);
         }
 
         // POST: Duenoes/Edit/5
@@ -97,19 +101,11 @@ namespace Veterinaria.Web.Controllers
             {
                 try
                 {
-                    _context.Update(dueno);
-                    await _context.SaveChangesAsync();
+                    await _duenoService.UpdateDuenoAsync(dueno);
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Exception ex)
                 {
-                    if (!DuenoExists(dueno.DNI))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return BadRequest(ex.Message);
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -117,41 +113,27 @@ namespace Veterinaria.Web.Controllers
         }
 
         // GET: Duenoes/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(string dni)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
+                var dueno = await _duenoService.GetDuenoByDNIAsync(dni);
+                return View(dueno);
             }
-
-            var dueno = await _context.Duenos
-                .FirstOrDefaultAsync(m => m.DNI == id);
-            if (dueno == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                return BadRequest(ex.Message);
             }
-
-            return View(dueno);
         }
 
         // POST: Duenoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(string dni)
         {
-            var dueno = await _context.Duenos.FindAsync(id);
-            if (dueno != null)
-            {
-                _context.Duenos.Remove(dueno);
-            }
-
-            await _context.SaveChangesAsync();
+            await _duenoService.DeleteDuenoAsync(dni);
             return RedirectToAction(nameof(Index));
         }
 
-        private bool DuenoExists(string id)
-        {
-            return _context.Duenos.Any(e => e.DNI == id);
-        }
     }
 }
