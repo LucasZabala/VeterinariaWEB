@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\repository\\especierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\repository\\especierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\services\\especieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\services\\especieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28688DFC-64E0-4BEB-B4BB-F6F830983131}|Veterinaria.Api\\Veterinaria.Web.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.api\\controllers\\especiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28688DFC-64E0-4BEB-B4BB-F6F830983131}|Veterinaria.Api\\Veterinaria.Web.csproj|solutionrelative:veterinaria.api\\controllers\\especiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\interfaces\\iespecierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\interfaces\\iespecierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\interfaces\\iespecieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\interfaces\\iespecieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\repository\\duenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\repository\\duenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28688DFC-64E0-4BEB-B4BB-F6F830983131}|Veterinaria.Api\\Veterinaria.Web.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.api\\views\\mascotas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{28688DFC-64E0-4BEB-B4BB-F6F830983131}|Veterinaria.Api\\Veterinaria.Web.csproj|solutionrelative:veterinaria.api\\views\\mascotas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\services\\duenoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\repository\\duenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\repository\\duenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|c:\\users\\user\\documents\\facultad\\asp.net\\veterinariaweb\\veterinaria.logic\\interfaces\\iduenoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFCF68F5-B389-4309-8412-DCBB8BD6B22A}|Veterinaria.Logic\\Veterinaria.Logic.csproj|solutionrelative:veterinaria.logic\\interfaces\\iduenoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,37 +62,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EspeciesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Controllers\\EspeciesController.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Controllers\\EspeciesController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Controllers\\EspeciesController.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Controllers\\EspeciesController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAuwGoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:54:55.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EspecieService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Services\\EspecieService.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Logic\\Services\\EspecieService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Services\\EspecieService.cs",
+              "RelativeToolTip": "Veterinaria.Logic\\Services\\EspecieService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:47:38.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EspecieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Repository\\EspecieRepository.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Logic\\Repository\\EspecieRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Repository\\EspecieRepository.cs",
+              "RelativeToolTip": "Veterinaria.Logic\\Repository\\EspecieRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:36:28.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEspecieService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Interfaces\\IEspecieService.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Logic\\Interfaces\\IEspecieService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Interfaces\\IEspecieService.cs",
+              "RelativeToolTip": "Veterinaria.Logic\\Interfaces\\IEspecieService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:35:39.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEspecieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Interfaces\\IEspecieRepository.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Logic\\Interfaces\\IEspecieRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Interfaces\\IEspecieRepository.cs",
+              "RelativeToolTip": "Veterinaria.Logic\\Interfaces\\IEspecieRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:33:00.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Mascotas\\Edit.cshtml",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Views\\Mascotas\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Mascotas\\Edit.cshtml*",
-              "RelativeToolTip": "Veterinaria.Api\\Views\\Mascotas\\Edit.cshtml*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAABTAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Mascotas\\Edit.cshtml",
+              "RelativeToolTip": "Veterinaria.Api\\Views\\Mascotas\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-22T02:41:10.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-22T02:30:05.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "MascotasController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Controllers\\MascotasController.cs",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Controllers\\MascotasController.cs",
@@ -80,12 +152,11 @@
               "RelativeToolTip": "Veterinaria.Api\\Controllers\\MascotasController.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAmwHUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T02:19:51.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T02:19:51.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "IDuenoService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Interfaces\\IDuenoService.cs",
               "RelativeDocumentMoniker": "Veterinaria.Logic\\Interfaces\\IDuenoService.cs",
@@ -93,12 +164,11 @@
               "RelativeToolTip": "Veterinaria.Logic\\Interfaces\\IDuenoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T22:54:40.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T22:54:40.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "DuenoService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Services\\DuenoService.cs",
               "RelativeDocumentMoniker": "Veterinaria.Logic\\Services\\DuenoService.cs",
@@ -106,8 +176,7 @@
               "RelativeToolTip": "Veterinaria.Logic\\Services\\DuenoService.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:44:04.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T23:44:04.752Z"
             },
             {
               "$type": "Document",
@@ -117,14 +186,26 @@
               "RelativeDocumentMoniker": "Veterinaria.Logic\\Repository\\DuenoRepository.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Repository\\DuenoRepository.cs",
               "RelativeToolTip": "Veterinaria.Logic\\Repository\\DuenoRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAvwDcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T23:03:22.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Veterinaria.Api\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T02:30:05.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "IDuenoRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Logic\\Interfaces\\IDuenoRepository.cs",
               "RelativeDocumentMoniker": "Veterinaria.Logic\\Interfaces\\IDuenoRepository.cs",
@@ -132,12 +213,11 @@
               "RelativeToolTip": "Veterinaria.Logic\\Interfaces\\IDuenoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T22:50:18.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T22:50:18.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "DuenoesController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Facultad\\ASP.NET\\VeterinariaWEB\\Veterinaria.Api\\Controllers\\DuenoesController.cs",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Controllers\\DuenoesController.cs",
@@ -145,8 +225,7 @@
               "RelativeToolTip": "Veterinaria.Api\\Controllers\\DuenoesController.cs",
               "ViewState": "AgIAAG4AAAAAAAAAAAAlwIcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:43:33.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T23:43:33.212Z"
             }
           ]
         }

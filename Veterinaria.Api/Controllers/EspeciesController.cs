@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Veterinaria.Logic.Data;
+using Veterinaria.Logic.Interfaces;
 using Veterinaria.Logic.Models;
 
 namespace Veterinaria.Web.Controllers
@@ -13,33 +14,25 @@ namespace Veterinaria.Web.Controllers
     public class EspeciesController : Controller
     {
         private readonly VeterinariaDbContext _context;
+        private readonly IEspecieService _especieService;
 
-        public EspeciesController(VeterinariaDbContext context)
+        public EspeciesController(VeterinariaDbContext context, IEspecieService especieService)
         {
             _context = context;
+            _especieService = especieService;
         }
 
         // GET: Especies
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Especies.ToListAsync());
+            var especies = await _especieService.GetEspeciesAllAsync();
+            return View(especies);
         }
 
         // GET: Especies/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var especie = await _context.Especies
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (especie == null)
-            {
-                return NotFound();
-            }
-
+            var especie = await _especieService.GetEspecieByIdAsync(id);
             return View(especie);
         }
 
@@ -58,26 +51,24 @@ namespace Veterinaria.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(especie);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    await _especieService.AddEspecieAsync(especie);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex);
+                }
+
             }
             return View(especie);
         }
 
         // GET: Especies/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var especie = await _context.Especies.FindAsync(id);
-            if (especie == null)
-            {
-                return NotFound();
-            }
+            var especie = await _especieService.GetEspecieByIdAsync(id);
             return View(especie);
         }
 
@@ -97,40 +88,22 @@ namespace Veterinaria.Web.Controllers
             {
                 try
                 {
-                    _context.Update(especie);
-                    await _context.SaveChangesAsync();
+                    await _especieService.UpdateEspecieAsync(especie);
+                    return RedirectToAction(nameof(Index));
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Exception ex)
                 {
-                    if (!EspecieExists(especie.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return BadRequest(ex);
                 }
-                return RedirectToAction(nameof(Index));
+
             }
             return View(especie);
         }
 
         // GET: Especies/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var especie = await _context.Especies
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (especie == null)
-            {
-                return NotFound();
-            }
-
+            var especie = await _especieService.GetEspecieByIdAsync(id);
             return View(especie);
         }
 
@@ -139,19 +112,8 @@ namespace Veterinaria.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var especie = await _context.Especies.FindAsync(id);
-            if (especie != null)
-            {
-                _context.Especies.Remove(especie);
-            }
-
-            await _context.SaveChangesAsync();
+            await _especieService.DeleteEspecieAsync(id);
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool EspecieExists(int id)
-        {
-            return _context.Especies.Any(e => e.Id == id);
         }
     }
 }
