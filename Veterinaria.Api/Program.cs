@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using Veterinaria.Logic.Data;
 using Veterinaria.Logic.Interfaces;
 using Veterinaria.Logic.Repository;
@@ -16,6 +17,15 @@ builder.Services.AddScoped<IDuenoRepository, DuenoRepository>();
 builder.Services.AddScoped<IDuenoService, DuenoService>();
 
 var app = builder.Build();
+
+////////////////////////// Agrega aquí la configuración de la cultura ///////////////////////////
+var cultureInfo = new CultureInfo("es-AR"); // O el código de tu región
+cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
+cultureInfo.NumberFormat.NumberGroupSeparator = ",";
+
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
